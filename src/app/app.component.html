@@ -1,31 +1,35 @@
-<div class="container">
+<div class="container basepadding">
   <div class="row">
-    <section class="col-md-2 col-sm-12">
-      <mat-card>
+    <section class="col-md-3 col-xs-12">
+      <mat-card class="basepadding">
         <mat-card-header>
           <mat-card-title>Vinicius Castro</mat-card-title>
           <mat-card-subtitle>Desenvolvedor FullStack</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="assets/images/profile.jpg" alt="Foto de perfil">
+        <img mat-card-image  src="assets/images/profile.jpg" alt="Foto de perfil">
         <mat-card-content>
           <p>
             Graduando em Sistemas de Informação, desenvolvedor FullStack em projetos Web e Mobile utilizando Angular 5,
-            Ionic 3, NodeJs, MongoDB, Scss, MySql e Java(POO).
+            Ionic 3, NodeJs, MongoDB, Scss.
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>LinkedIn</button>
-          <button mat-button>GitHub</button>
+          <a href="https://www.linkedin.com/in/vinicius-castrotidvs" target="_blank" mat-button>LinkedIn</a>
+          <a href="https://github.com/viniciusrc15" target="_blank" mat-button>GitHub</a>
         </mat-card-actions>
       </mat-card>
     </section>
-    <section class="col-md-9 tabs">
-      <mat-tab-group>
-        <mat-tab label="Quem sou eu">Quem sou eu</mat-tab>
-        <mat-tab active label="Histórico Profissional">
+    <section class="col-md-9 col-xs-12 tabs">
+      <mat-tab-group class="basepadding">
+        <mat-tab label="Quem sou eu">
           <app-profile></app-profile>
         </mat-tab>
-        <mat-tab label="Contato">Contato</mat-tab>
+        <mat-tab label="Histórico Profissional">
+          <app-history></app-history>
+        </mat-tab>
+        <mat-tab label="Trabalhos e Skills">
+          <app-skills></app-skills>
+        </mat-tab>
       </mat-tab-group>
     </section>
   </div>

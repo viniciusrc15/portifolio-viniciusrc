@@ -1,19 +1,26 @@
-
 div.container {
     height: 100%;
     background-color: beige;
 }
 
-mat-card img {
-    padding: 10px;
+a:hover {
+    background-color: beige;
+}
+
+section {
+    padding: 0 !important;
+}
+
+.basepadding {
+    padding: 20px;
+}
+
+mat-tab-header {
+    background-color: aquamarine !important;
 }
 
 @media (min-width: 1326px) {
     section.col-md-9.tabs {
         margin-top: 80px;
     }
-}
-
-button:hover {
-    background-color: beige;
 }

@@ -3,10 +3,6 @@ div.container {
     background-color: beige;
 }
 
-a:hover {
-    background-color: beige;
-}
-
 section {
     padding: 0 !important;
 }
@@ -17,6 +13,9 @@ section {
 
 mat-tab-header {
     background-color: aquamarine !important;
+}
+.mat-tab-body-content {
+    overflow-x: inherit !important;
 }
 
 @media (min-width: 1326px) {

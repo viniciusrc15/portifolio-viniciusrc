@@ -2,8 +2,16 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-body {
+body {    
     font-family: Roboto,"Helvetica Neue",sans-serif;
     background-color: #DCDCDC;
     margin: 0;
+}
+a:hover {
+    background-color: beige;
+}
+
+
+.mat-tab-body-content {
+    overflow-x: inherit !important;
 }

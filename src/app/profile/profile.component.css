@@ -1,0 +1,30 @@
+article {
+    margin: 10px;
+}
+
+mat-chip {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.basico {
+    background-color: #9a9a11;
+}
+
+.pre-intermediario {
+    background-color: #6a9a1f;
+}
+
+.intermediario {
+    background-color: green;
+}
+
+.mat-list-item {
+    max-height: 1000px !important;
+}
+
+/* @media (max-width: 1326px) {
+    mat-chip-list div {
+        position: absolute;
+    }
+} */

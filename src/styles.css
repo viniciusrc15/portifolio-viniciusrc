@@ -4,6 +4,7 @@
 
 body {    
     font-family: Roboto,"Helvetica Neue",sans-serif;
+    letter-spacing: 0.3px;
     background-color: #DCDCDC;
     margin: 0;
 }

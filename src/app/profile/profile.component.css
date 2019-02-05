@@ -23,8 +23,17 @@ mat-chip {
     max-height: 1000px !important;
 }
 
-/* @media (max-width: 1326px) {
-    mat-chip-list div {
-        position: absolute;
+table div {
+    height: 8px;
+    width: 8px;
+    margin-right: 5px;
+    padding: 0px;
+    border-radius: 4px;
+    display: inline-block;
+}
+@media (min-width: 1326px) {
+    table {
+        min-width: 500px;
+        text-align: center;
     }
-} */
+}

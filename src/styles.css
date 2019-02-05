@@ -8,10 +8,14 @@ body {
     background-color: #DCDCDC;
     margin: 0;
 }
+
 a:hover {
     background-color: beige;
 }
 
+.basepadding {
+    padding: 20px;
+}
 
 .mat-tab-body-content {
     overflow-x: inherit !important;

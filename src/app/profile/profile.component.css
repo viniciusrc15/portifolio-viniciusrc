@@ -2,8 +2,10 @@ article {
     margin: 10px;
 }
 
-mat-chip {
-    color: #ffffff !important;
+mat-chip.pre-intermediario,
+mat-chip.basico,
+mat-chip.intermediario  {
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -20,7 +22,7 @@ mat-chip {
 }
 
 .mat-list-item {
-    max-height: 1000px !important;
+    max-height: 1000px;
 }
 
 table div {
@@ -31,6 +33,7 @@ table div {
     border-radius: 4px;
     display: inline-block;
 }
+
 @media (min-width: 1326px) {
     table {
         min-width: 500px;

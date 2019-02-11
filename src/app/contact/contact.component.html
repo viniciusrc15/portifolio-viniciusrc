@@ -1,0 +1,23 @@
+<aside>
+  <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+    <div class="row">
+      <mat-form-field class="col-md-6">
+        <mat-label>Seu email</mat-label>
+        <input matInput placeholder="example@example.com" formControlName="from" type="email">
+        <mat-error *ngIf="contactForm.get('from').invalid">
+          {{ contactForm.get('from').hasError('required') ? ('Campo email obrigatório') : ('Email inválido')}}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="col-md-7">
+        <input matInput="datetime-local" placeholder="Assunto" formControlName="subject" type="text">
+        <mat-error *ngIf="contactForm.get('subject').invalid">Campo obrigatório</mat-error>
+      </mat-form-field>
+      <mat-form-field class="col-md-10">
+        <textarea matInput placeholder="Mensagem" formControlName="text" rows="3"></textarea>
+        <mat-error *ngIf="contactForm.get('text').invalid">Campo obrigatório</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </div>
+  </form>
+</aside>

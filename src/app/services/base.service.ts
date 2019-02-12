@@ -9,7 +9,7 @@ export class BaseService {
   headers: HttpHeaders;
   constructor(private http: HttpClient) {
     this.http = http;
-   }
+  }
 
   sendMessage(data) {
     return new Promise((resolve, reject) => {

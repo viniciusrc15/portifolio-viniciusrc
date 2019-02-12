@@ -13,19 +13,14 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
   contactFormFields: any = {
-    to: [''],
-    subject: [''],
-    text: ['']
+    from: ['', [Validators.required, Validators.email]],
+    subject: ['', [Validators.required]],
+    text: ['', [Validators.required]]
   };
 
   constructor(public fb: FormBuilder,
     private baseService: BaseService,
     public snackBar: MatSnackBar) {
-    this.contactFormFields = {
-      from: ['', [Validators.required, Validators.email]],
-      subject: ['', [Validators.required]],
-      text: ['', [Validators.required]]
-    };
     this.contactForm = this.fb.group(this.contactFormFields);
   }
 
@@ -39,10 +34,8 @@ export class ContactComponent implements OnInit {
         this.snackBar.open(d.message, 'Fechar', { duration: 3000 });
         this.contactForm.reset();
       }).catch(e => {
-        console.log(e.message, 'Fechar', { duration: 3000 });
+        this.snackBar.open(e.message, 'Fechar', { duration: 3000 });
       });
     }
-
   }
-
 }

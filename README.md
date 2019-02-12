@@ -4,5 +4,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Detalhes
 
-Êxperiências, trabalhos feitos e skills.
+Experiências, trabalhos feitos, skills e contato.
 [Clique aqui](https://viniciusrc15.github.io/portifolio-viniciusrc/) para visualizar.

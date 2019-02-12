@@ -6,7 +6,7 @@ import {
   MatAutocompleteModule, MatInputModule, MatMenuModule,
   MatButtonModule, MatIconModule, MatCardModule, MatRadioModule,
   MatListModule, MatTabsModule, MatDatepickerModule, MatTableModule, MatStepperModule, MatChipsModule,
-  MatSlideToggleModule, MatExpansionModule, MatSliderModule, MatSnackBarModule
+  MatSlideToggleModule, MatExpansionModule, MatSliderModule, MatSnackBarModule, MatProgressSpinnerModule
 } from '@angular/material';
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
@@ -15,6 +15,7 @@ import { A11yModule } from '@angular/cdk/a11y';
 @NgModule({
   imports: [
     CommonModule,
+    MatSlideToggleModule, MatExpansionModule, MatSliderModule, MatSnackBarModule, MatProgressSpinnerModule,
     MatSelectModule, MatDialogModule, BrowserAnimationsModule, MatSnackBarModule,
     MatAutocompleteModule, MatInputModule, MatMenuModule, CdkTableModule, CdkTreeModule, A11yModule,
     MatButtonModule, MatIconModule, MatCardModule, MatRadioModule,
@@ -22,6 +23,7 @@ import { A11yModule } from '@angular/cdk/a11y';
     MatSlideToggleModule, MatExpansionModule, MatSliderModule
   ],
   exports: [
+    MatSlideToggleModule, MatExpansionModule, MatSliderModule, MatSnackBarModule, MatProgressSpinnerModule,
     MatSelectModule, MatDialogModule, BrowserAnimationsModule, MatSnackBarModule,
     MatAutocompleteModule, MatInputModule, MatMenuModule, CdkTableModule, CdkTreeModule, A11yModule,
     MatButtonModule, MatIconModule, MatCardModule, MatRadioModule,

@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class BaseService {
-  apiUrl = 'http://localhost:3000/api';
+  apiUrl = 'https://cors-anywhere.herokuapp.com/http://apiunamonitoria-coo-app.umbler.net/api';  // 'http://localhost:3000/api';
   headers: HttpHeaders;
   constructor(private http: HttpClient) {
     this.http = http;

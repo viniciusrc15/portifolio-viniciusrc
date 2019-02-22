@@ -4,7 +4,7 @@
       <mat-spinner></mat-spinner>
     </div>
   </div>
-  <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+  <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" #frm="ngForm">
     <div class="row">
       <mat-form-field class="col-md-6 col-xs-12">
         <mat-label>Seu email</mat-label>

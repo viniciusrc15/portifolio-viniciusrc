@@ -1,5 +1,5 @@
 import { BaseService } from './../services/base.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 
@@ -12,6 +12,7 @@ import { MatSnackBar } from '@angular/material';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
+  @ViewChild('frm') ngForm;
   contactFormFields: any = {
     from: ['', [Validators.required, Validators.email]],
     subject: ['', [Validators.required]],
@@ -35,7 +36,7 @@ export class ContactComponent implements OnInit {
       this.baseService.sendMessage(this.contactForm.value).then((d: any) => {
         this.snackBar.open(`Seu email foi enviado com sucesso,
         em breve entrarei em contato no seu email informado!`, 'OK', { duration: 10000 });
-        this.contactForm.reset();
+        this.ngForm.resetForm();
         this.load = false;
       }).catch(e => {
         this.snackBar.open(`Erro ao encaminhar email, se quiser efetivar o contato
